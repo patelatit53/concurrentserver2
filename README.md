@@ -1,0 +1,2 @@
+# concurrentserver2
+This program shows the server code that handle multiple clients. The main thread in server is given the job of accepting tcp connections.   As soon as the connection is established, the main thread creates a conversation thread. The Conversation class holds the work logic to be executed by Conversation thread. The Conversation thread reads the string sent from the client. It sends back to all the connected clients through their corresponding PrintWriter instances. Writer instances of all the active clients are stored in a global ArrayList.
